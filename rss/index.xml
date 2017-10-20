@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 27 Jul 2017 18:58:31 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Understanding Inheritance in JavaScript]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 20 Oct 2017 23:25:39 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Trigger click when determinate requests finish with AngularJS]]></title><description><![CDATA[<div class="paragraph">
+<p>One of the last projects where I collaborate, the requirement has specifically triggered a click in one element of the DOM when determinate requests finish.</p>
+</div>
+<div class="paragraph">
+<p>After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast event on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.</p>
+</div>
+<div class="paragraph">
+<p>The best way to understand how was implemented this, is throught the following example:</p>
+</div>
+<div class="paragraph">
+<p>One of the last projects where I collaborate, the requirement triggered a click in one element of the DOM when determinate requests finish.</p>
+</div>
+<div class="paragraph">
+<p>After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast directive on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.</p>
+</div>
+<div class="paragraph">
+<p>The best way to understand how was implemented this is through the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>// Here we declare an empty array to store each request
+var requests = [];
+
+// Our first function
+$scope.firstFunction = function() {
+    // Execute broadcast event with the name of the function
+    $scope.$broadcast('requestEnded', requests.push('firstFunction'));
+};
+
+// Our last function
+$scope.secondFunction = function() {
+    // Execute broadcast event with the name of the function
+    $scope.$broadcast('requestEnded', requests.push('secondFunction'));
+};
+
+// This listener is executed each time that requestEnded is fired
+$scope.$on('requestEnded', function(event, countRequests) {
+    // Here we validate that the count of requests is the desire
+    if (countRequests == 2) {
+        // Trigger Click
+        $('.class-selector').click();
+    }
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Official Documentation
+<a href="https://docs.angularjs.org/#$broadcast" class="bare">https://docs.angularjs.org/#$broadcast</a></p>
+</div>]]></description><link>https://jbrizio.github.io/2017/10/20/Trigger-click-when-determinate-requests-finish-with-AngularJS.html</link><guid isPermaLink="true">https://jbrizio.github.io/2017/10/20/Trigger-click-when-determinate-requests-finish-with-AngularJS.html</guid><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Fri, 20 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Understanding Inheritance in JavaScript]]></title><description><![CDATA[<div class="paragraph">
 <p>It&#8217;s an important concept that you always should know when you&#8217;re working using an object-oriented programming. But when we&#8217;re using JavaScript, initially we need to knowing initially that this is language oriented to objects using prototyping instead of classes (often referred to as prototypal inheritance).</p>
 </div>
 <div class="paragraph">
