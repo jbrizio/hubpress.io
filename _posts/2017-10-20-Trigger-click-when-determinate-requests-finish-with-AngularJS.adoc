@@ -1,0 +1,44 @@
+
+= Trigger click when determinate requests finish with AngularJS
+
+One of the last projects where I collaborate, the requirement has specifically triggered a click in one element of the DOM when determinate requests finish.
+
+After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast event on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.
+
+The best way to understand how was implemented this, is throught the following example:
+
+One of the last projects where I collaborate, the requirement triggered a click in one element of the DOM when determinate requests finish.
+
+After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast directive on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.
+
+The best way to understand how was implemented this is through the following example:
+
+```
+// Here we declare an empty array to store each request
+var requests = [];
+
+// Our first function
+$scope.firstFunction = function() {
+    // Execute broadcast event with the name of the function
+    $scope.$broadcast('requestEnded', requests.push('firstFunction'));
+};
+
+// Our last function
+$scope.secondFunction = function() {
+    // Execute broadcast event with the name of the function
+    $scope.$broadcast('requestEnded', requests.push('secondFunction'));
+};
+
+// This listener is executed each time that requestEnded is fired
+$scope.$on('requestEnded', function(event, countRequests) {
+    // Here we validate that the count of requests is the desire
+    if (countRequests == 2) {
+        // Trigger Click
+        $('.class-selector').click();
+    }
+});
+```
+
+Official Documentation
+https://docs.angularjs.org/#$broadcast
+  
