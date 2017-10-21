@@ -1,17 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 20 Oct 2017 23:27:31 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Trigger click when determinate requests finish using AngularJS]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 21 Oct 2017 00:01:08 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Trigger click when determinate requests finish using AngularJS]]></title><description><![CDATA[<div class="paragraph">
 <p>One of the last projects where I collaborate, the requirement has specifically triggered a click in one element of the DOM when determinate requests finish.</p>
 </div>
 <div class="paragraph">
 <p>After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast event on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.</p>
-</div>
-<div class="paragraph">
-<p>The best way to understand how was implemented this, is throught the following example:</p>
-</div>
-<div class="paragraph">
-<p>One of the last projects where I collaborate, the requirement triggered a click in one element of the DOM when determinate requests finish.</p>
-</div>
-<div class="paragraph">
-<p>After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast directive on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.</p>
 </div>
 <div class="paragraph">
 <p>The best way to understand how was implemented this is through the following example:</p>
