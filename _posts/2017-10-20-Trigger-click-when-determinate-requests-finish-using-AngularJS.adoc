@@ -5,12 +5,6 @@ One of the last projects where I collaborate, the requirement has specifically t
 
 After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast event on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.
 
-The best way to understand how was implemented this, is throught the following example:
-
-One of the last projects where I collaborate, the requirement triggered a click in one element of the DOM when determinate requests finish.
-
-After of make a deep research about some solutions and try some of these, the final solution results on apply the $broadcast directive on the functions declared and use a counter to validate the last cycle of the calls to trigger the click on the element.
-
 The best way to understand how was implemented this is through the following example:
 
 ```
