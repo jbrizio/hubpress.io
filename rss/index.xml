@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 21 Oct 2017 00:01:08 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Trigger click when determinate requests finish using AngularJS]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 21 Oct 2017 00:02:45 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Trigger click when determinate requests finish using AngularJS]]></title><description><![CDATA[<div class="paragraph">
 <p>One of the last projects where I collaborate, the requirement has specifically triggered a click in one element of the DOM when determinate requests finish.</p>
 </div>
 <div class="paragraph">
@@ -15,7 +15,7 @@ var requests = [];
 // Our first function
 $scope.firstFunction = function() {
     // Execute broadcast event with the name of the function
-    $scope.$broadcast('requestEnded', requests.push('firstFunction'));
+    $scope.$broadcast('requestEnded',requests.push('firstFunction'));
 };
 
 // Our last function
@@ -35,8 +35,10 @@ $scope.$on('requestEnded', function(event, countRequests) {
 </div>
 </div>
 <div class="paragraph">
-<p>Official Documentation
-<a href="https://docs.angularjs.org/#$broadcast" class="bare">https://docs.angularjs.org/#$broadcast</a></p>
+<p>Official Documentation</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.angularjs.org/#$broadcast" class="bare">https://docs.angularjs.org/#$broadcast</a></p>
 </div>]]></description><link>https://jbrizio.github.io/2017/10/20/Trigger-click-when-determinate-requests-finish-using-AngularJS.html</link><guid isPermaLink="true">https://jbrizio.github.io/2017/10/20/Trigger-click-when-determinate-requests-finish-using-AngularJS.html</guid><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Fri, 20 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Understanding Inheritance in JavaScript]]></title><description><![CDATA[<div class="paragraph">
 <p>It&#8217;s an important concept that you always should know when you&#8217;re working using an object-oriented programming. But when we&#8217;re using JavaScript, initially we need to knowing initially that this is language oriented to objects using prototyping instead of classes (often referred to as prototypal inheritance).</p>
 </div>
