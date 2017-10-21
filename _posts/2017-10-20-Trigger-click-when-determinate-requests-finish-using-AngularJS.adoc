@@ -14,7 +14,7 @@ var requests = [];
 // Our first function
 $scope.firstFunction = function() {
     // Execute broadcast event with the name of the function
-    $scope.$broadcast('requestEnded', requests.push('firstFunction'));
+    $scope.$broadcast('requestEnded',requests.push('firstFunction'));
 };
 
 // Our last function
@@ -34,5 +34,6 @@ $scope.$on('requestEnded', function(event, countRequests) {
 ```
 
 Official Documentation
+
 https://docs.angularjs.org/#$broadcast
   
