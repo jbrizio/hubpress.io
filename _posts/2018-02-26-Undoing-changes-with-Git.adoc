@@ -1,0 +1,21 @@
+= Undoing changes with Git
+
+There is no doubt that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands that bring me more control on the workflow.
+
+image::https://i.imgur.com/6GDi5T2.png[]
+
+Think that you introduce a small change in a determinate branch a few days ago, and you need to revert to the previous state. To make that, you need to write the following command in your shell:
+
+`git revert <SHA-1>`
+
+What git-revert does is create a commit which undoes changes made in a given commit, creating a commit which is reverse of a given commit.
+
+Imagine another case, is common when you start to work with git push by mistake a commit in the main branch:
+
+`git reset --soft origin/master`
+
+This will rollback your branch to the same commit as origin/master. So the commits are removed but all the files you have changed are moved to staging. 
+
+There are three modes for git reset: soft, mixed and hard.
+Look at the https://git-scm.com/docs/git-reset[official documentation for an in-depth explanation].
+
