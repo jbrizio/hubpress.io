@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>How to undoing changes with Git</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://jbrizio.github.io/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jbrizio.github.io/themes/casper/assets/css/screen.css?v=1519691859324" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="Jonathan Brizio" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How to undoing changes with Git" />
+    <meta property="og:description" content="Don&amp;#8217;t be a dude that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands" />
+    <meta property="og:url" content="https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html" />
+    <meta property="article:published_time" content="2018-02-26T00:00:00.000Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How to undoing changes with Git" />
+    <meta name="twitter:description" content="Don&amp;#8217;t be a dude that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands" />
+    <meta name="twitter:url" content="https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Jonathan Brizio",
+    "author": {
+        "@type": "Person",
+        "name": "Jonathan Brizio",
+        "image": "https://avatars1.githubusercontent.com/u/4563394?v=4",
+        "url": "https://jbrizio.github.io/author/jbrizio/",
+        "sameAs": "http://ar.linkedin.com/in/jonathanbrizio/",
+        "description": "Front-End Software Developer"
+    },
+    "headline": "How to undoing changes with Git",
+    "url": "https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html",
+    "datePublished": "2018-02-26T00:00:00.000Z",
+    "description": "Don&amp;#8217;t be a dude that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="Jonathan Brizio" href="https://jbrizio.github.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+</head>
+<body class="post-template nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">How to undoing changes with Git</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2018-02-26">26 February 2018</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>Don&#8217;t be a dude that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands that bring me more control on the workflow.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://i.imgur.com/6GDi5T2.png" alt="6GDi5T2.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Think that you introduce a small change in a determinate branch a few days ago, and you need to revert to the previous state. To make that, you need to write the following command in your shell:</p>
+</div>
+<div class="paragraph">
+<p><code>git revert &lt;SHA-1&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>What git-revert does is create a commit which undoes changes made in a given commit, creating a commit which is reverse of a given commit.</p>
+</div>
+<div class="paragraph">
+<p>Imagine another case, is common when you start to work with git push by mistake a commit in the main branch:</p>
+</div>
+<div class="paragraph">
+<p><code>git reset --soft origin/master</code></p>
+</div>
+<div class="paragraph">
+<p>This will rollback your branch to the same commit as origin/master. So the commits are removed but all the files you have changed are moved to staging.</p>
+</div>
+<div class="paragraph">
+<p>There are three modes for git reset: soft, mixed and hard. Look at the <a href="https://git-scm.com/docs/git-reset">official documentation for an in-depth explanation</a>.</p>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="https://jbrizio.github.io/author/jbrizio/" style="background-image: url(https://avatars1.githubusercontent.com/u/4563394?v&#x3D;4)"><span class="hidden">Jonathan Brizio's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="https://jbrizio.github.io/author/jbrizio/">Jonathan Brizio</a></h4>
+
+                    <p>Front-End Software Developer</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Córdoba, Argentina</span>
+                    <span class="author-link icon-link"><a href="http://ar.linkedin.com/in/jonathanbrizio/">http://ar.linkedin.com/in/jonathanbrizio/</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=How%20to%20undoing%20changes%20with%20Git&amp;url=https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jbrizio.github.io/2018/02/26/How-to-undoing-changes-with-Git.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jonathanbrizio'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="https://jbrizio.github.io">Jonathan Brizio</a> &copy; 2018</section>
+            <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+       
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+    <script type="text/javascript" src="//jbrizio.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1519691859324"></script>
+    <script type="text/javascript" src="//jbrizio.github.io/themes/casper/assets/js/index.js?v=1519691859324"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-81302818-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
