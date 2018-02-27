@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 27 Feb 2018 00:43:54 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Trigger click when determinate requests finish using AngularJS]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 27 Feb 2018 00:48:40 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Undoing changes with Git]]></title><description><![CDATA[<div class="paragraph">
+<p>There is no doubt that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands that bring me more control on the workflow.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://i.imgur.com/6GDi5T2.png" alt="6GDi5T2.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Think that you introduce a small change in a determinate branch a few days ago, and you need to revert to the previous state. To make that, you need to write the following command in your shell:</p>
+</div>
+<div class="paragraph">
+<p><code>git revert &lt;SHA-1&gt;</code></p>
+</div>
+<div class="paragraph">
+<p>What git-revert does is create a commit which undoes changes made in a given commit, creating a commit which is reverse of a given commit.</p>
+</div>
+<div class="paragraph">
+<p>Imagine another case, is common when you start to work with git push by mistake a commit in the main branch:</p>
+</div>
+<div class="paragraph">
+<p><code>git reset --soft origin/master</code></p>
+</div>
+<div class="paragraph">
+<p>This will rollback your branch to the same commit as origin/master. So the commits are removed but all the files you have changed are moved to staging.</p>
+</div>
+<div class="paragraph">
+<p>There are three modes for git reset: soft, mixed and hard.
+Look at the <a href="https://git-scm.com/docs/git-reset">official documentation for an in-depth explanation</a>.</p>
+</div>]]></description><link>https://jbrizio.github.io/2018/02/26/Undoing-changes-with-Git.html</link><guid isPermaLink="true">https://jbrizio.github.io/2018/02/26/Undoing-changes-with-Git.html</guid><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Mon, 26 Feb 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Trigger click when determinate requests finish using AngularJS]]></title><description><![CDATA[<div class="paragraph">
 <p>One of the last projects where I collaborate, the requirement has specifically triggered a click in one element of the DOM when determinate requests finish.</p>
 </div>
 <div class="paragraph">
