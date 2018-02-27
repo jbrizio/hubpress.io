@@ -1,6 +1,6 @@
 = How to undoing changes with Git
 
-Don't be a dude that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands that bring me more control on the workflow.
+There is no doubt that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands that bring me more control on the workflow.
 
 image::https://i.imgur.com/6GDi5T2.png[]
 
