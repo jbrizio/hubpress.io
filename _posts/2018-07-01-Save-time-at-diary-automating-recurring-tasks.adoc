@@ -1,16 +1,22 @@
 = Save time at diary automating recurring tasks
-:hp-tags: Productivity, Software, Bash,
+:hp-tags: Productivity, Software, Command-Line,
 :hp-alt-title: Save time at diary automating recurring tasks
 
-It’s always fascinating to see how much of the tasks that you do at diary can be automated. In my case, these are some tasks that make at diary how to developer:
+It’s always fascinating to see how much of the tasks that you do at diary can be automated. In my case, how to a developer at diary I write repetitive commands in my terminal. The most commons are:
 
-- Write repetitive commands in terminal
-- Track hours worked
+- Transpile code
+- Manage local server
 - Connect to the VPN
+- View logs
 
-I always recommend to my coworkers create an alias when you write repetitive commands. This is much easier to remind and you save a lot of time at the end of the day.
+I always recommend to my co-workers create an alias when you write repetitive commands. This is much easier to remind and you save a lot of time at the end of the day.
 
-If you feel confident with the command-line, I recommend to read the entire guide of Joshua Levy. This is a great selection of notes and tips on using the command-line: https://github.com/jlevy/the-art-of-command-line
+== Uses for aliases
+There are several types of uses for aliases. They include:
 
-For example, if you at diary want to view the logs of your app on Heroky
+- Reducing the amount of typing that is necessary for commands
+- Correcting common misspellings of commands
+- Standardizing the name of a command across multiple OS
 
+== Improving your knowledge
+If you feel confident with the command-line, I recommend reading the entire guide of Joshua Levy. This is a great selection of notes and tips on using the command-line: https://github.com/jlevy/the-art-of-command-line
