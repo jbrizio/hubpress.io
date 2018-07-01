@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 27 Feb 2018 00:48:40 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Undoing changes with Git]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 01 Jul 2018 23:02:02 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Save time at diary automating recurring tasks]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>It’s always fascinating to see how much of the tasks that you do at diary can be automated. In my case, how to a developer at diary I write repetitive commands in my terminal. The most commons are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Transpile code</p>
+</li>
+<li>
+<p>Manage local server</p>
+</li>
+<li>
+<p>Connect to the VPN</p>
+</li>
+<li>
+<p>View logs</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>I always recommend to my co-workers create an alias when you write repetitive commands. This is much easier to remind and you save a lot of time at the end of the day.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uses_for_aliases">Uses for aliases</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are several types of uses for aliases. They include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Reducing the amount of typing that is necessary for commands</p>
+</li>
+<li>
+<p>Correcting common misspellings of commands</p>
+</li>
+<li>
+<p>Standardizing the name of a command across multiple OS</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_improving_your_knowledge">Improving your knowledge</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you feel confident with the command-line, I recommend reading the entire guide of Joshua Levy. This is a great selection of notes and tips on using the command-line: <a href="https://github.com/jlevy/the-art-of-command-line" class="bare">https://github.com/jlevy/the-art-of-command-line</a></p>
+</div>
+</div>
+</div>]]></description><link>https://jbrizio.github.io/2018/07/01/Save-time-at-diary-automating-recurring-tasks.html</link><guid isPermaLink="true">https://jbrizio.github.io/2018/07/01/Save-time-at-diary-automating-recurring-tasks.html</guid><category><![CDATA[Productivity]]></category><category><![CDATA[Software]]></category><category><![CDATA[Command-Line]]></category><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Sun, 01 Jul 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Undoing changes with Git]]></title><description><![CDATA[<div class="paragraph">
 <p>There is no doubt that git is the best tool that the developers we have. Is really useful to any kind of team, in fact, if you are working alone would be really powerful too. I use this in a diary and each time I discover new commands that bring me more control on the workflow.</p>
 </div>
 <div class="imageblock">
