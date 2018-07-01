@@ -1,0 +1,16 @@
+= Save time at diary automating recurring tasks
+:hp-tags: Productivity, Software, Bash,
+:hp-alt-title: Save time at diary automating recurring tasks
+
+It’s always fascinating to see how much of the tasks that you do at diary can be automated. In my case, these are some tasks that make at diary how to developer:
+
+- Write repetitive commands in terminal
+- Track hours worked
+- Connect to the VPN
+
+I always recommend to my coworkers create an alias when you write repetitive commands. This is much easier to remind and you save a lot of time at the end of the day.
+
+If you feel confident with the command-line, I recommend to read the entire guide of Joshua Levy. This is a great selection of notes and tips on using the command-line: https://github.com/jlevy/the-art-of-command-line
+
+For example, if you at diary want to view the logs of your app on Heroky
+
