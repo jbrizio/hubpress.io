@@ -1,0 +1,32 @@
+= Building My First Alexa Skill with Node.js
+:hp-image: https://images.unsplash.com/photo-1508160552827-195c99fc90b7
+:published_at: 2019-03-23
+:hp-tags: Alexa, AWS, Nodejs,
+:hp-alt-title: Building My First Alexa Skill with Node.js
+
+On the next lines, I would explain shortly what are the concepts that you need to understand before to start developing skills for your own Amazon Alexa device. The idea here is to have enough information to get started.
+
+== Requirements
+
+- Amazon Developer Account
+
+- Experience with Node.js
+
+== What's Alexa?
+This is Amazon’s voice-control system. With that, you can control music, create shopping lists or reminders, get instant weather reports, and control popular smart-home products using nothing else that the sound of your voice.
+
+== What's an Alexa skill?
+These are apps that give to Alexa devices more abilities that the mentioned before. Absolutely of all kinds. Through the Alexa application, you can incorporate or disable these skills.
+
+== What's AWS Lambda?
+AWS Lambda is a compute service that lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. This would be our backend that processes the request and returns the data back as a JSON.
+
+== Entities involved in the flow
+. The user who speaks a command
+. The Echo device, which receives the initial voice input
+. The Amazon Alexa service, which receives the data from the devices
+. The backend service which contains the business logic for the skill itself
+
+video::Rsm7XnTQIiQ[youtube]
+
+Well, now that you have all the material needed to start with the development, I invite you to https://www.amazon.com/dp/B07PSBHYJ8/[install my latest skill] called "Dollar Price". That was an experiment with a public API to obtain the official price of exchange between the dollar and Argentine peso.
