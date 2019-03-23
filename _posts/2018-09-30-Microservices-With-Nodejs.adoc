@@ -1,0 +1,14 @@
+= Microservices With Node.js
+
+:hp-image: https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb
+:published_at: 2018-09-30
+:hp-tags: Microservices, NodeJS, Architecture
+:hp-alt-title: Microservices With Node.js
+
+Microservice architecture is rapidly changing the way we develop our applications. Small, highly decoupled software component is the foundation of this architecture. But hey that’s the theory. Now how can we apply it in our day to day job?
+
+How can we structure our application to unleash the benefit of a microservice architecture? On this presentation, I will show you some points to be in mind before to start with that.
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bMRK17J11yguyQ" width="650" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-top: 20px; max-width: 100%;" allowfullscreen> </iframe></div>
+++++
