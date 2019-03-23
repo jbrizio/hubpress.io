@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Building My First Alexa Skill with Node.js</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://jbrizio.github.io/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jbrizio.github.io/themes/casper/assets/css/screen.css?v=1553368215445" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="Jonathan Brizio" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Building My First Alexa Skill with Node.js" />
+    <meta property="og:description" content="On the next lines, I would explain shortly what are the concepts that you need to understand before to start developing skills for your own Amazon Alexa device. The idea here is to have enough information to get started. Requirements Amazon Developer Account Experience with Node.js What&amp;#8217;s" />
+    <meta property="og:url" content="https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1508160552827-195c99fc90b7" />
+    <meta property="article:published_time" content="2019-03-23T00:00:00.000Z" />
+    <meta property="article:tag" content="Alexa" />
+    <meta property="article:tag" content="AWS" />
+    <meta property="article:tag" content="Nodejs" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Building My First Alexa Skill with Node.js" />
+    <meta name="twitter:description" content="On the next lines, I would explain shortly what are the concepts that you need to understand before to start developing skills for your own Amazon Alexa device. The idea here is to have enough information to get started. Requirements Amazon Developer Account Experience with Node.js What&amp;#8217;s" />
+    <meta name="twitter:url" content="https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html" />
+    <meta name="twitter:image:src" content="https://images.unsplash.com/photo-1508160552827-195c99fc90b7" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Jonathan Brizio",
+    "author": {
+        "@type": "Person",
+        "name": "Jonathan Brizio",
+        "image": "https://avatars1.githubusercontent.com/u/4563394?v=4",
+        "url": "https://jbrizio.github.io/author/jbrizio/",
+        "sameAs": "https://linkedin.com/in/jonathanbrizio/",
+        "description": "Software Developer"
+    },
+    "headline": "Building My First Alexa Skill with Node.js",
+    "url": "https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html",
+    "datePublished": "2019-03-23T00:00:00.000Z",
+    "image": "https://images.unsplash.com/photo-1508160552827-195c99fc90b7",
+    "keywords": "Alexa, AWS, Nodejs",
+    "description": "On the next lines, I would explain shortly what are the concepts that you need to understand before to start developing skills for your own Amazon Alexa device. The idea here is to have enough information to get started. Requirements Amazon Developer Account Experience with Node.js What&amp;#8217;s"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="Jonathan Brizio" href="https://jbrizio.github.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+</head>
+<body class="post-template tag-Alexa tag-AWS tag-Nodejs nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(https://images.unsplash.com/photo-1508160552827-195c99fc90b7)">
+    <nav class="main-nav overlay clearfix">
+        
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-Alexa tag-AWS tag-Nodejs">
+
+        <header class="post-header">
+            <h1 class="post-title">Building My First Alexa Skill with Node.js</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2019-03-23">23 March 2019</time>  on <a href="https://jbrizio.github.io/tag/Alexa/">Alexa</a>, <a href="https://jbrizio.github.io/tag/AWS/">AWS</a>, <a href="https://jbrizio.github.io/tag/Nodejs/">Nodejs</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the next lines, I would explain shortly what are the concepts that you need to understand before to start developing skills for your own Amazon Alexa device. The idea here is to have enough information to get started.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements">Requirements</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon Developer Account</p>
+</li>
+<li>
+<p>Experience with Node.js</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_s_alexa">What&#8217;s Alexa?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Amazon’s voice-control system. With that, you can control music, create shopping lists or reminders, get instant weather reports, and control popular smart-home products using nothing else that the sound of your voice.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_s_an_alexa_skill">What&#8217;s an Alexa skill?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These are apps that give to Alexa devices more abilities that the mentioned before. Absolutely of all kinds. Through the Alexa application, you can incorporate or disable these skills.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_s_aws_lambda">What&#8217;s AWS Lambda?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AWS Lambda is a compute service that lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. This would be our backend that processes the request and returns the data back as a JSON.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entities_involved_in_the_flow">Entities involved in the flow</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The user who speaks a command</p>
+</li>
+<li>
+<p>The Echo device, which receives the initial voice input</p>
+</li>
+<li>
+<p>The Amazon Alexa service, which receives the data from the devices</p>
+</li>
+<li>
+<p>The backend service which contains the business logic for the skill itself</p>
+</li>
+</ol>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/Rsm7XnTQIiQ?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>Well, now that you have all the material needed to start with the development, I invite you to <a href="https://www.amazon.com/dp/B07PSBHYJ8/">install my latest skill</a> called "Dollar Price". That was an experiment with a public API to obtain the official price of exchange between the dollar and Argentine peso.</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="https://jbrizio.github.io/author/jbrizio/" style="background-image: url(https://avatars1.githubusercontent.com/u/4563394?v&#x3D;4)"><span class="hidden">Jonathan Brizio's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="https://jbrizio.github.io/author/jbrizio/">Jonathan Brizio</a></h4>
+
+                    <p>Software Developer</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Córdoba, Argentina</span>
+                    <span class="author-link icon-link"><a href="https://linkedin.com/in/jonathanbrizio/">https://linkedin.com/in/jonathanbrizio/</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Building%20My%20First%20Alexa%20Skill%20with%20Node.js&amp;url=https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jonathanbrizio'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="https://jbrizio.github.io">Jonathan Brizio</a> &copy; 2019</section>
+            <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+       
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+    <script type="text/javascript" src="//jbrizio.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1553368215445"></script>
+    <script type="text/javascript" src="//jbrizio.github.io/themes/casper/assets/js/index.js?v=1553368215445"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-81302818-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

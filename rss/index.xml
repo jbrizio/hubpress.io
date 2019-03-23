@@ -1,10 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 30 Sep 2018 22:31:46 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Microservices With Node.js]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jonathan Brizio]]></title><description><![CDATA[Front-End Software Developer]]></description><link>https://jbrizio.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 23 Mar 2019 19:10:15 GMT</lastBuildDate><atom:link href="https://jbrizio.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Microservices With Node.js]]></title><description><![CDATA[<div class="paragraph">
 <p>Microservice architecture is rapidly changing the way we develop our applications. Small, highly decoupled software component is the foundation of this architecture. But hey that’s the theory. Now how can we apply it in our day to day job?</p>
 </div>
 <div class="paragraph">
 <p>How can we structure our application to unleash the benefit of a microservice architecture? On this presentation, I will show you some points to be in mind before to start with that.</p>
 </div>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/bMRK17J11yguyQ" width="650" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-top: 20px; max-width: 100%;" allowfullscreen> </iframe></div>]]></description><link>https://jbrizio.github.io/2019/09/30/Microservices-With-Nodejs.html</link><guid isPermaLink="true">https://jbrizio.github.io/2019/09/30/Microservices-With-Nodejs.html</guid><category><![CDATA[microservices]]></category><category><![CDATA[nodejs]]></category><category><![CDATA[architecture]]></category><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Mon, 30 Sep 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Save time at diary automating recurring tasks]]></title><description><![CDATA[<div id="preamble">
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bMRK17J11yguyQ" width="650" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-top: 20px; max-width: 100%;" allowfullscreen> </iframe></div>]]></description><link>https://jbrizio.github.io/2018/09/30/Microservices-With-Nodejs.html</link><guid isPermaLink="true">https://jbrizio.github.io/2018/09/30/Microservices-With-Nodejs.html</guid><category><![CDATA[Microservices]]></category><category><![CDATA[Node.js]]></category><category><![CDATA[Architecture]]></category><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Sun, 30 Sep 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Building My First Alexa Skill with Node.js]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the next lines, I would explain shortly what are the concepts that you need to understand before to start developing skills for your own Amazon Alexa device. The idea here is to have enough information to get started.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements">Requirements</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon Developer Account</p>
+</li>
+<li>
+<p>Experience with Node.js</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_s_alexa">What&#8217;s Alexa?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Amazon’s voice-control system. With that, you can control music, create shopping lists or reminders, get instant weather reports, and control popular smart-home products using nothing else that the sound of your voice.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_s_an_alexa_skill">What&#8217;s an Alexa skill?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These are apps that give to Alexa devices more abilities that the mentioned before. Absolutely of all kinds. Through the Alexa application, you can incorporate or disable these skills.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_s_aws_lambda">What&#8217;s AWS Lambda?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AWS Lambda is a compute service that lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running. This would be our backend that processes the request and returns the data back as a JSON.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entities_involved_in_the_flow">Entities involved in the flow</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The user who speaks a command</p>
+</li>
+<li>
+<p>The Echo device, which receives the initial voice input</p>
+</li>
+<li>
+<p>The Amazon Alexa service, which receives the data from the devices</p>
+</li>
+<li>
+<p>The backend service which contains the business logic for the skill itself</p>
+</li>
+</ol>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/Rsm7XnTQIiQ?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>Well, now that you have all the material needed to start with the development, I invite you to <a href="https://www.amazon.com/dp/B07PSBHYJ8/">install my latest skill</a> called "Dollar Price". That was an experiment with a public API to obtain the official price of exchange between the dollar and Argentine peso.</p>
+</div>
+</div>
+</div>]]></description><link>https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html</link><guid isPermaLink="true">https://jbrizio.github.io/2019/03/23/Building-My-First-Alexa-Skill-with-Nodejs.html</guid><category><![CDATA[Alexa]]></category><category><![CDATA[AWS]]></category><category><![CDATA[Nodejs]]></category><dc:creator><![CDATA[Jonathan Brizio]]></dc:creator><pubDate>Sat, 23 Mar 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Save time at diary automating recurring tasks]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>It’s always fascinating to see how much of the tasks that you do at diary can be automated. In my case, how to a developer at diary I write repetitive commands in my terminal. The most commons are:</p>
