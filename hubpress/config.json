@@ -7,7 +7,7 @@
   },
   "site": {
     "title": "Jonathan Brizio",
-    "description": "Front-End Software Developer",
+    "description": "Software Developer",
     "cover": "",
     "postsPerPage": "5",
     "googleAnalytics": "UA-81302818-1",
@@ -28,7 +28,7 @@
     "stackoverflow": "https://stackoverflow.com/users/2220962/jonathan-brizio"
   },
   "theme": {
-    "name": "casper"
+    "name": "uno"
   },
   "urls": {
     "site": "https://jbrizio.github.io",
