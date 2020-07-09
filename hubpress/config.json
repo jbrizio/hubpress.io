@@ -28,12 +28,12 @@
     "stackoverflow": "https://stackoverflow.com/users/2220962/jonathan-brizio"
   },
   "theme": {
-    "name": "uno"
+    "name": "saga"
   },
   "urls": {
     "site": "https://jbrizio.github.io",
     "hubpress": "https://jbrizio.github.io",
-    "theme": "//jbrizio.github.io/themes/uno",
+    "theme": "//jbrizio.github.io/themes/saga",
     "images": "https://jbrizio.github.io/images"
   },
   "initialisationConfigComponent": {
